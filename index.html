@@ -31,24 +31,53 @@
 <body class="font-lato">
     <!-- header section -->
     <header class="container md:mx-auto">
-        <div
-            class="grid grid-cols-1 md:grid-cols-3 items-center justify-center bg-[#F85559] rounded-[600px] mt-12 px-12 py-5">
-            <div>
-                <ul class="flex items-center justify-center gap-7">
-                    <li class="text-white text-lg font-medium"><a href="">Home</a></li>
-                    <li class="text-white text-lg font-medium"><a href="">About Us</a></li>
-                    <li class="text-white text-lg font-medium"><a href="">Shop</a></li>
-                    <li class="text-white text-lg font-medium"><a href="">All Fruits</a></li>
+        <div class="navbar lg:bg-[#F85559] rounded-none lg:rounded-[600px] mt-12 lg:px-12 lg:py-5">
+            <div class="grid lg:grid-cols-3">
+                <div class="">
+                    <!-- Menu section -->
+                    <div class="hidden lg:flex">
+                        <ul class="flex items-center justify-center gap-7">
+                            <li class="text-white text-lg font-medium"><a href="">Home</a></li>
+                            <li class="text-white text-lg font-medium"><a href="">About Us</a></li>
+                            <li class="text-white text-lg font-medium"><a href="">Shop</a></li>
+                            <li class="text-white text-lg font-medium"><a href="">All Fruits</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- logo section -->
+                <div class="flex items-center justify-center gap-4">
+                    <img src="./images/logo.png" alt="">
+                    <h2 class="lg:text-white text-xl lg:text-4xl font-bold">Fruit Burst</h2>
+                </div>
+
+                <!-- input section -->
+                <div class="hidden sm:block ">
+                    <!-- This div will be hidden on small devices and shown on large devices -->
+                    <input class="rounded-[50px] lg:w-full lg:h-14 input input-bordered" type="text"
+                        placeholder="Search here">
+                </div>
+            </div>
+
+            <!-- Dropdown -->
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
                 </ul>
             </div>
-            <div class="flex items-center justify-center gap-4">
-                <img src="./images/logo.png" alt="">
-                <h2 class="text-white text-4xl font-bold">Fruit Burst</h2>
-            </div>
-            <div class="form-control">
-                <input class="rounded-[50px] md:w-full md:h-14 input input-bordered" type="text"
-                    placeholder="   Search here">
-            </div>
+
         </div>
 
         <!-- banner section -->
